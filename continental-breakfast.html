@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continental Breakfast Recipes</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">🍽️ Delicious Recipes</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html" class="active">Recipes</a>
+                <ul class="dropdown-menu">
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="desserts.html">Desserts</a></li>
+                </ul>
+            </li>
+            <li><a href="submit-recipe.html">Submit Recipe</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+            <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar in Header -->
+    <div class="header-search">
+        <input type="text" id="header-search-input" placeholder="Search recipes..." onkeyup="searchRecipes()">
+        <button onclick="searchRecipes()"><i class="fas fa-search"></i></button>
+    </div>
+</header>
+
+<!-- Continental Breakfast Recipes Section -->
+<section class="recipes">
+    <h2>Continental Breakfast Recipes</h2>
+    <div class="recipe-grid">
+        
+        <!-- Recipe 1: Croissants -->
+        <div class="recipe" id="croissants">
+            <img src="croissants.jpg" alt="Croissants">
+            <h4>Croissants</h4>
+            <p>Buttery and flaky French croissants.</p>
+        </div>
+
+        <!-- Recipe 2: Eggs Benedict -->
+        <div class="recipe" id="eggs-benedict">
+            <img src="eggs-benedict.jpg" alt="Eggs Benedict">
+            <h4>Eggs Benedict</h4>
+            <p>Classic eggs Benedict with hollandaise sauce.</p>
+        </div>
+
+        <!-- Recipe 3: Fruit Salad -->
+        <div class="recipe" id="fruit-salad">
+            <img src="fruit-salad.jpg" alt="Fruit Salad">
+            <h4>Fruit Salad</h4>
+            <p>Colorful fruit salad with a variety of fresh fruits.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Delicious Recipes. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
